@@ -4,7 +4,7 @@
   "description": "Cleanly register uncaughtException and unhandledRejection handlers",
   "main": "index.js",
   "scripts": {
-    "test": "standard"
+    "test": "standard && brittle test.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/holepunchto/uncaughts#readme",
   "devDependencies": {
+    "brittle": "^3.12.2",
+    "resolve-reject-promise": "^1.0.0",
     "standard": "^17.1.2"
   }
 }
