@@ -1,4 +1,11 @@
-const process = require('process')
+// Bare accesses the uncaughtexception and unhandledRejection handlers
+// through the global 'Bare', rather than through process
+let isBare = false
+try {
+  isBare = !!Bare.platform // eslint-disable-line no-undef
+} catch {} // not Bare
+
+const process = isBare ? Bare : require('process') // eslint-disable-line no-undef
 
 function on (handler) {
   process.on('uncaughtException', handler)

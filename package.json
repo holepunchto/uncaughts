@@ -4,7 +4,8 @@
   "description": "Cleanly register uncaughtException and unhandledRejection handlers",
   "main": "index.js",
   "scripts": {
-    "test": "standard && brittle test.js"
+    "test": "standard && brittle test.js && npm run test:bare",
+    "test:bare": "bare test.js"
   },
   "files": [
     "index.js"

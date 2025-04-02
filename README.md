@@ -2,6 +2,8 @@
 
 Cleanly register uncaughtException and unhandledRejection handlers, using a single handler for both.
 
+Supports Node.js and [Bare](https://github.com/holepunchto/bare).
+
 ## Install
 
 `npm i uncaughts`
