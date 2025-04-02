@@ -8,7 +8,7 @@ Cleanly register uncaughtException and unhandledRejection handlers, using a sing
 
 ## Usage
 
-```
+```js
 const uncaughts = require('uncaughts')
 
 const handler = () => {
