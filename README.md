@@ -25,4 +25,4 @@ uncaughts.on(handler)
 uncaughts.off(handler)
 ```
 
-This module also exposes `uncaughts.once`, which removes the handlers after it triggered once (just like Node's `Events.once(...)`). However, using this API is not recommended, since it rarely makes sense to only handle one unhandled rejection or uncaught exception. Furthermore, there might be subtle differences in behaviour between Node.js and Bare.
+This module also exposes `uncaughts.once`, which removes the handlers after it triggered once (just like Node's `Events.once(...)`). However, using this API is not recommended, since it rarely makes sense to only handle one unhandled rejection or uncaught exception. Furthermore, there can be subtle differences in behaviour between Node.js and Bare.
