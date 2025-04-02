@@ -1,3 +1,5 @@
+const process = require('process')
+
 function on (handler) {
   process.on('uncaughtException', handler)
   process.on('unhandledRejection', handler)
