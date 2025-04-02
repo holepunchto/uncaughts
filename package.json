@@ -6,6 +6,9 @@
   "scripts": {
     "test": "standard && brittle test.js"
   },
+  "files": [
+    "index.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/holepunchto/uncaughts.git"
