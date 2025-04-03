@@ -1,9 +1,6 @@
 // Bare accesses the uncaughtexception and unhandledRejection handlers
 // through the global 'Bare', rather than through process
-let isBare = false
-try {
-  isBare = !!Bare.platform // eslint-disable-line no-undef
-} catch {} // not Bare
+const { isBare } = require('which-runtime')
 
 const process = isBare ? Bare : require('process') // eslint-disable-line no-undef
 
