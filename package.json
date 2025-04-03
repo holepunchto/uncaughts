@@ -30,5 +30,8 @@
     "brittle": "^3.12.2",
     "resolve-reject-promise": "^1.0.0",
     "standard": "^17.1.2"
+  },
+  "dependencies": {
+    "which-runtime": "^1.2.1"
   }
 }
