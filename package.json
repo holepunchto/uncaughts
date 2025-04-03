@@ -1,6 +1,6 @@
 {
   "name": "uncaughts",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Cleanly register uncaughtException and unhandledRejection handlers",
   "main": "index.js",
   "scripts": {
