@@ -1,8 +1,7 @@
-const { isBare } = require('which-runtime')
-
-const process = isBare ? Bare : require('process') // eslint-disable-line no-undef
+const { process } = require('#process')
 const test = require('brittle')
 const rrp = require('resolve-reject-promise')
+const { isBare } = require('which-runtime')
 const uncaughts = require('.')
 
 test('on-off flow', t => {
