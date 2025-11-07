@@ -1,4 +1,4 @@
-const { process } = require('#process')
+const process = require('#process')
 const test = require('brittle')
 const rrp = require('resolve-reject-promise')
 const { isBare } = require('which-runtime')

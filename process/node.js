@@ -1,1 +1,1 @@
-exports.process = require('process')
+module.exports = require('process')

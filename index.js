@@ -1,4 +1,4 @@
-const { process } = require('#process')
+const process = require('#process')
 
 function on (handler) {
   process.on('uncaughtException', handler)

@@ -1,1 +1,1 @@
-exports.process = Bare // eslint-disable-line no-undef
+module.exports = Bare // eslint-disable-line no-undef
