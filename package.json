@@ -14,7 +14,8 @@
     }
   },
   "files": [
-    "index.js"
+    "index.js",
+    "process/"
   ],
   "repository": {
     "type": "git",
