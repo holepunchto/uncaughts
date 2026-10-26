@@ -1,16 +1,16 @@
 const process = require('#process')
 
-function on (handler) {
+function on(handler) {
   process.on('uncaughtException', handler)
   process.on('unhandledRejection', handler)
 }
 
-function off (handler) {
+function off(handler) {
   process.off('uncaughtException', handler)
   process.off('unhandledRejection', handler)
 }
 
-function once (handler) {
+function once(handler) {
   // Cleanup the other one that did not trigger
   // Note: there is no guarantee that both do not trigger
   // (this can happen if both trigger within the same tick)
