@@ -4,7 +4,7 @@ const rrp = require('resolve-reject-promise')
 const { isBare } = require('which-runtime')
 const uncaughts = require('.')
 
-test('on-off flow', t => {
+test('on-off flow', (t) => {
   t.plan(5)
 
   const handler = () => {
@@ -24,9 +24,11 @@ test('on-off flow', t => {
   reject(new Error('I trigger an unandled rejection'))
 })
 
-test('once flow', async t => {
+test('once flow', async (t) => {
   if (isBare) {
-    t.comment('the once flow is odd on bare, due to an interaction with brittle, so skipping this test')
+    t.comment(
+      'the once flow is odd on bare, due to an interaction with brittle, so skipping this test'
+    )
     t.pass('once flow on bare is not tested')
     return
   }
